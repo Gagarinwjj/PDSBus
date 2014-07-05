@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:padding="5.0dip" >
+
+    <Button
+        android:id="@+id/titlebar_left"
+        style="@style/TextViewStyleCommonBarLeftButton"
+        android:layout_width="66.0dip"
+        android:layout_height="32.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/common_titlebar_back_btn"
+        android:gravity="center"
+        android:text="@string/back" />
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14dip"
+        android:layout_weight="0.8"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/workButton"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/tabselector"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:text="@string/work"
+        android:textColor="@color/lanse"
+        android:textSize="15sp"
+        android:visibility="invisible" >
+    </Button>
+
+</LinearLayout>

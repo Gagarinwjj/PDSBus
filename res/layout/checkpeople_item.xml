@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tabselector"
+    android:button="@drawable/checkbox_selector"
+    android:paddingLeft="40dp"
+    android:text="姓名"
+    android:textColor="#000"
+    android:textSize="14sp" />

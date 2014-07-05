@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layer_titlebar" />
+
+    <Spinner
+        android:id="@+id/form_types"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinnerselector"
+        android:layoutAnimation="@anim/list_layout_anim"
+        android:prompt="@string/spinner_promat" />
+
+    <RadioGroup
+        android:id="@+id/choices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/choice1" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/choice2" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/choice3" >
+        </RadioButton>
+    </RadioGroup>
+
+    <wedo.oa.utils.PullToRefreshListView
+        android:id="@+id/form_data"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="5dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/spliter"
+        android:dividerHeight="1dip"
+        android:listSelector="@drawable/transparent" >
+    </wedo.oa.utils.PullToRefreshListView>
+
+</LinearLayout>

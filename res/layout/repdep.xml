@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layer_titlebar" />
+
+    <ListView
+        android:id="@+id/repdeps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:animationCache="true"
+        android:cacheColorHint="@null"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:divider="@drawable/spliter"
+        android:fastScrollEnabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layoutAnimation="@anim/list_layout_anim"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:visibility="visible" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layer_titlebar" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dip"
+        android:text="收公文流程（2013年3月18日15:11） \n流水号：1470   当前步骤：相关部门 "
+        android:textColor="@color/lanse"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabselector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="选择下一步骤："
+                    android:textColor="#0F0"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/nextstep"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@drawable/spinnerselector"
+                    android:layoutAnimation="@anim/list_layout_anim"
+                    android:prompt="@string/spinner_choseNextStep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tabselector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item2"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="经办人："
+                        android:textColor="#0F0"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/jbrNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabselector"
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/jbrBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_btn_tran"
+                            android:text="[选择审批人员]"
+                            android:textColor="@color/lanse" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tabselector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item3"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="经办部门："
+                        android:textColor="#0F0"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/jbbmNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabselector"
+                            android:inputType="textMultiLine"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/jbbmBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_btn_tran"
+                            android:text="[选择审批人员]"
+                            android:textColor="@color/lanse" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tabselector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item4"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="经办角色："
+                        android:textColor="#0F0"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/jbjsNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabselector"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/jbjsBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_btn_tran"
+                            android:text="[选择审批人员]"
+                            android:textColor="@color/lanse" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tabselector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item5"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="审批接收人员："
+                        android:textColor="#0F0"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/spjsryNames"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tabselector"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:inputType="textMultiLine"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/spjsBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_btn_tran"
+                            android:text="[选择审批人员]"
+                            android:textColor="@color/lanse" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/smsll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tabselector"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/innerSMS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="内部短信通知"
+                        android:textColor="#000" />
+
+                    <!--
+                         <CheckBox
+                        android:id="@+id/phoneSMS"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="手机短信通知"
+                        android:textColor="#000"/>                       
+                    -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/itemhint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dip"
+        android:text="当前步骤为结束"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/select_btn_green"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:paddingTop="10dip"
+        android:text="提交" />
+
+</LinearLayout>

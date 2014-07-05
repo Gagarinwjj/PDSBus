@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="huise">#F7F7F7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lanse">#318ACE</color>
+    <color name="shenlan">#0E69AD</color>
+    <color name="qianhuang">#FFFBDE</color>
+    <color name="zi_huise">#6B716B</color>
+    <color name="danlv">#cce8cf</color>
+    <color name="divider_line">#ffe3e2e3</color>
+    <color name="list_item_grey_light">#fff7f7f7</color>
+    <color name="bg_item_color_yellow">#fffffade</color>
+    <color name="bg_item_color_blue">#fff6fbff</color>
+    <color name="font_color_white">#ffffffff</color>
+    <color name="font_text_white">#fffefefe</color>
+    <color name="hot1">#ece4e5</color>
+    <color name="hot2">#e5cdcf</color>
+    <color name="hot3">#e0b3b8</color>
+    <color name="hot4">#dc8992</color>
+    <color name="hot5">#de6371</color>
+    <color name="hot6">#e54354</color>
+    <color name="hot7">#eb3347</color>
+    <color name="hot8">#f90621</color>
+    <color name="hot9">#FF0000</color>
+
+</resources>

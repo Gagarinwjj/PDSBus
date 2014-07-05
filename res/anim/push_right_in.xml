@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这里的set里面不可以指定android:duration 否则，没有效果。 我本以为会共享的 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/overshoot_interpolator"
+    android:shareInterpolator="true" >
+
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <translate
+        android:duration="600"
+        android:fromXDelta="100%"
+        android:toXDelta="0" />
+
+</set>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layer_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabselector"
+            android:text="当前步骤:"
+            android:textColor="#000"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/bz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/tabselector"
+            android:gravity="center"
+            android:hint="步骤名称"
+            android:textColor="#00FF00"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tabselector"
+            android:text="委托代办人："
+            android:textColor="#000"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dbr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/tabselector"
+            android:gravity="center"
+            android:hint="@string/click_to_choose"
+            android:textColor="#00FF00"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:background="@drawable/select_btn_green"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="提  交" />
+
+</LinearLayout>

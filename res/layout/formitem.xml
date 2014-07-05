@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/formitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/no"
+            style="@style/form_text_h"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+             />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sequence"
+                    style="@style/form_text_h"
+                    android:text="@string/sequence" />
+
+                <TextView
+                    android:id="@+id/originator"
+                    style="@style/form_text_h"
+                    android:text="@string/originator" />
+
+                <TextView
+                    android:id="@+id/state"
+                    style="@style/form_text_h"
+                    android:text="@string/state" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wrap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/temp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical" >
+
+                    <wedo.oa.utils.MyTextView
+                        android:id="@+id/formtype"
+                        style="@style/form_text_v"
+                        android:text="@string/formtype" />
+
+                    <TextView
+                        android:id="@+id/workname"
+                        style="@style/form_text_v"
+                        android:text="@string/workname" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/form_text_v"
+                        android:text="@string/time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/who"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/towho"
+                        style="@style/form_text_v"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/towho" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/transaction"
+            style="@style/form_text_h"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/select_btn_green"
+            android:text="@string/transaction" />
+
+        <Button
+            android:id="@+id/entrust"
+            style="@style/form_text_h"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/select_btn_white"
+            android:text="@string/entrust" />
+    </LinearLayout>
+
+</LinearLayout>

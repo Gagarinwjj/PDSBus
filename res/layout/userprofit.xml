@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        style="@style/linear_search_conditions"
+        android:layout_width="wrap_content"
+        android:alwaysDrawnWithCache="true"
+        android:persistentDrawingCache="all" >
+
+        <LinearLayout style="@style/linear_search_condition" >
+
+            <TextView
+                style="@style/title_twocol"
+                android:text="年份" />
+
+            <EditText
+                android:id="@+id/et_yaer"
+                style="@style/title_twocol"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:hint="请输入年份"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <View style="@style/split" />
+
+        <LinearLayout style="@style/linear_search_condition" >
+
+            <TextView
+                style="@style/title_twocol"
+                android:text="月份" />
+
+            <EditText
+                android:id="@+id/et_month"
+                style="@style/title_twocol"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:hint="请输入月份"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <View style="@style/split" />
+
+        <LinearLayout style="@style/linear_search_condition" >
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/long_button"
+                android:text="提交" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profit_webview_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="60dip"
+        android:alwaysDrawnWithCache="true"
+        android:background="@drawable/white_round_bg"
+        android:orientation="vertical"
+        android:persistentDrawingCache="all"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center" />
+
+        <WebView
+            android:id="@+id/profit_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scrollbarThumbVertical="@drawable/icon_scrollbar" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色 -->
+    <drawable name="white">#FFFFFF</drawable>
+    <!-- 红色 -->
+    <drawable name="red">#FF0000</drawable>
+    <!-- 橙色 -->
+    <drawable name="orange">#FFA500</drawable>
+    <!-- 黑色 -->
+    <drawable name="black">#000000</drawable>
+    <!-- 深粉红色 -->
+    <drawable name="deeppink">#FF1493</drawable>
+    <!-- 雪白色 -->
+    <drawable name="snow">#FFFAFA</drawable>
+    <!-- 桔黄色 -->
+    <drawable name="bisque">#FFE4C4</drawable>
+    <!-- 热粉红色 -->
+    <drawable name="hotpink">#FF69B4</drawable>
+    <!-- 淡灰色 -->
+    <drawable name="gainsboro">#DCDCDC</drawable>
+    <!-- 石蓝色 -->
+    <drawable name="slateblue">#6A5ACD</drawable>
+    <!-- 绿色 -->
+    <drawable name="green">#008000</drawable>
+    <!-- 暗深红色 -->
+    <drawable name="crimson">#DC143C</drawable>
+    <!-- 天蓝色 -->
+    <drawable name="azure">#F0FFFF </drawable>
+    <!-- 暗蓝色 -->
+    <drawable name="darkblue">#00008B</drawable>
+    <!-- 亮蓝色 -->
+    <drawable name="lightblue">#ADD8E6</drawable>
+    <!-- 暗灰色 -->
+    <drawable name="darkgray">#A9A9A9</drawable>
+    <!-- 透明色 -->
+    <drawable name="transparent">#00000000</drawable>
+
+</resources>

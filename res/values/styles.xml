@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="shadow_white">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="TextViewStyleCommonBarLeftButton">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/selector_tabs</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="form_text_h">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:background">@drawable/tabselector</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="form_text_v">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/lanse</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/tabselector</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="linear_search_conditions">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/white_round_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+    </style>
+
+    <style name="linear_search_condition">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">1.0dip</item>
+    </style>
+
+    <style name="title_twocol">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="split">
+        <item name="android:background">@drawable/spliter</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+    </style>
+
+    <style name="long_button">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/green_round_bg_xml</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+
+    <style name="ProgressRound">
+        <item name="android:indeterminateDrawable">@anim/loading</item>
+    </style>
+
+    <style name="MyProgerssDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:indeterminateDrawable">@anim/loading</item>
+    </style>
+
+    <style name="AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/menu_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layer_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/huise"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <wedo.oa.utils.MyTextView
+            android:id="@+id/news_detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:text="@string/newsTitle"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!-- ProgressBar采用系统预定义样式，如果不满足整体风格，拷贝一份，自定义 -->
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/news_detail_ds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5500fff0"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/newsInfo"
+            android:textColor="@color/zi_huise"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <!--
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:fadingEdge="none"
+            android:scrollbarThumbVertical="@drawable/icon_scrollbar"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/news_detail_article"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dip"
+                android:text="正文"
+                android:textColor="@color/zi_huise"
+                android:textStyle="bold" />
+        </ScrollView>
+        -->
+
+        <WebView
+            android:id="@+id/news_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:scrollbarThumbVertical="@drawable/icon_scrollbar" />
+
+        <!--
+             <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dip"
+            android:background="@color/lanse"
+            android:text="@string/copyright"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

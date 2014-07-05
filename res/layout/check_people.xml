@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/dialog_bg6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="从某某某中选择"
+        android:textColor="@color/shenlan"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="7dp"
+        android:contentDescription="分割线"
+        android:src="@color/lanse" />
+
+    <GridView
+        android:id="@+id/peoples"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:layoutAnimation="@anim/list_layout_anim"
+        android:numColumns="3"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_pane"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/btn_conform"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabselector"
+            android:text="确定"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="18dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabselector"
+            android:text="取消"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

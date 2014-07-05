@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_msg_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip" >
+
+        <ImageView
+            android:id="@+id/qq_dialog_frame_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_dialog_default" />
+
+        <TextView
+            android:id="@+id/qq_dialog_frame_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示"
+            android:textColor="#000"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <!--
+         <View
+        style="@style/split"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" />
+    -->
+
+    <TextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="确认退出？"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!--
+         <View
+        style="@style/split"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/btn_pane"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabselector"
+            android:text="确定"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/tabselector"
+            android:text="取消"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
